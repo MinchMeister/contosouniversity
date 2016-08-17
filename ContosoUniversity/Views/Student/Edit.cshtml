@@ -1,0 +1,30 @@
+﻿@model ContosoUniversity.Models.Student
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<div class="row">
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <h4>Student</h4>
+        <hr />
+
+        @Html.HiddenFor(model => model.ID)
+        @Html.Partial("_StudentCreateUpdate")
+
+        <input type="submit" value="Save" class="button small" />
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

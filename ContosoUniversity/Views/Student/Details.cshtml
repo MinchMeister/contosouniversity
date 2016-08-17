@@ -1,0 +1,16 @@
+﻿@model ContosoUniversity.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+    @Html.ActionLink("Back to List", "Index")
+
+    <h4>Student</h4>
+    <hr />
+
+    @Html.Partial("_StudentDetails")
+
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID })

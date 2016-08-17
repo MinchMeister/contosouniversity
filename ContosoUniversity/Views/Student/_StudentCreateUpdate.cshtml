@@ -1,0 +1,75 @@
+﻿@model ContosoUniversity.Models.Student
+
+@Html.ValidationSummary(true, "", new { @class = "" })
+
+<div id="LastName">
+    <div class="row">
+        <div class="medium-12 columns">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-4 columns">
+            @Html.EditorFor(model => model.LastName, "")
+        </div>
+        <div class="medium-8 columns">
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-4 columns">
+            @Html.ValidationMessageFor(model => model.LastName, "")
+        </div>
+        <div class="medium-8 columns">
+        </div>
+    </div>
+</div>
+
+
+
+<div id="FirstName">
+    <div class="row">
+        <div class="medium-12 columns">
+            @Html.LabelFor(model => model.FirstMidName)
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-4 columns">
+            @Html.EditorFor(model => model.FirstMidName, "")
+        </div>
+        <div class="medium-8 columns">
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-4 columns">
+            @Html.ValidationMessageFor(model => model.FirstMidName, "")
+        </div>
+        <div class="medium-8 columns">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="EnrollmentDate">
+    <div class="row">
+        <div class="medium-12 columns">
+            @Html.LabelFor(model => model.EnrollmentDate)
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-4 columns">
+            @Html.EditorFor(model => model.EnrollmentDate, "")
+        </div>
+        <div class="medium-8 columns">
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-4 columns">
+            @Html.ValidationMessageFor(model => model.EnrollmentDate, "")
+        </div>
+        <div class="medium-8 columns">
+        </div>
+    </div>
+</div>

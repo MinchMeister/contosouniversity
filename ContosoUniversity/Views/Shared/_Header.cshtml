@@ -1,0 +1,22 @@
+﻿<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+
+        <li class="name">
+            <h1>@Html.ActionLink("Contoso University", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</h1>
+        </li>
+
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+   
+    <section class="top-bar-section">
+        <ul>
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Students", "Index", "Student")</li>
+            <li>@Html.ActionLink("Courses", "Index", "Course")</li>
+            <li>@Html.ActionLink("Instructors", "Index", "Instructor")</li>
+            <li>@Html.ActionLink("Departments", "Index", "Department")</li>
+            <li>@Html.ActionLink("About", "About", "Home")</li>
+        </ul>
+    </section>
+</nav>
